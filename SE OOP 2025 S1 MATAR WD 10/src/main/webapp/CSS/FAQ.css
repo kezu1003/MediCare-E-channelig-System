@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+body {
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('../images/faq1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 900px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 40px;
+    margin: 60px auto;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+}
+
+.accordion-button {
+    font-weight: 600;
+    color: #ffffff;
+    background: linear-gradient(90deg, #6ea8fe);
+    border: none;
+    padding: 20px;
+    font-size: 1.1rem;
+    border-radius: 10px !important;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.accordion-button:hover {
+    background: linear-gradient(90deg,  #0d6efd);
+    transform: translateY(-2px);
+}
+
+.accordion-button:not(.collapsed) {
+    color: #ffffff;
+    background: linear-gradient(90deg,  #0d6efd);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.accordion-body {
+    background-color: #ffffff;
+    color: #333;
+    border: 1px solid #dee2e6;
+    border-top: 0;
+    padding: 25px;
+    font-size: 1rem;
+    line-height: 1.7;
+    border-radius: 0 0 10px 10px;
+}
+
+.accordion-item {
+    border: none;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #ffffff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}

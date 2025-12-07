@@ -1,0 +1,130 @@
+/* General Reset and Body Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     justify-content: center;
+}
+
+body {
+    background-color: #f0f4f8;
+            min-height: 100vh;
+            padding: 0;
+}
+
+.main-content {
+            margin-top: 70px; /* Adjust based on header height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: calc(100vh - 70px);
+            padding: 20px;
+        }
+
+/* Container for the profile section */
+.profile-container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    padding: 30px;
+    justify-content: center;
+}
+
+/* Heading Styling */
+h1 {
+    color: #1e3a8a;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+/* Form Floating Input Styling */
+.form-floating {
+    margin-bottom: 20px;
+}
+
+.form-floating input.form-control {
+    border: 1px solid #93c5fd;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 1rem;
+    background-color: #f8fafc;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-floating input.form-control:focus {
+    border-color: #1e3a8a;
+    box-shadow: 0 0 8px rgba(30, 58, 138, 0.2);
+    outline: none;
+}
+
+.form-floating label {
+    color: #1e3a8a;
+    font-size: 0.95rem;
+    padding: 12px;
+}
+
+/* Disabled Fieldset Styling */
+fieldset:disabled .form-floating input {
+    background-color: #e2e8f0;
+    color: #64748b;
+    cursor: not-allowed;
+}
+
+/* Submit Button Styling */
+input[type="submit"] {
+    background-color: #1e3a8a;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: block;
+    margin: 20px auto 0;
+}
+
+input[type="submit"]:hover {
+    background-color: #2563eb;
+    transform: translateY(-2px);
+}
+
+input[type="submit"]:active {
+    transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    input[type="submit"] {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .form-floating input.form-control {
+        font-size: 0.9rem;
+    }
+}

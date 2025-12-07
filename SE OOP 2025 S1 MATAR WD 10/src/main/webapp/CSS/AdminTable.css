@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+/* General page styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('../images/pdata.jpg') no-repeat center center fixed;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container for the table */
+.table-container {
+    background-color: rgba(0, 123, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Table styling */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.table thead {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+.table th {
+    padding: 15px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.table tbody tr {
+    border-bottom: 1px solid #e9ecef;
+    transition: background-color 0.2s ease;
+}
+
+.table tbody tr:hover {
+    background-color: #f1f3f5;
+}
+
+.table td {
+    padding: 12px 15px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Button styling */
+button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+button[type="submit"]:first-of-type {
+    background-color: #28a745;
+    color: #ffffff;
+}
+
+button[type="submit"]:first-of-type:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+button[type="submit"]:last-of-type {
+    background-color: #dc3545;
+    color: #ffffff;
+}
+
+button[type="submit"]:last-of-type:hover {
+    background-color: #c82333;
+    transform: translateY(-2px);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .table th, .table td {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .table-container {
+        padding: 10px;
+    }
+}

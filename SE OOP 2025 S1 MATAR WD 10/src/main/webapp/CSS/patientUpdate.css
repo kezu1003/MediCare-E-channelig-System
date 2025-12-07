@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+/* General body styling */
+body {
+    background-color: #f0f4f8;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Form container styling */
+form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Form floating input styling */
+.form-floating {
+    margin-bottom: 20px;
+}
+
+.form-floating input.form-control {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.form-floating input.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Label styling */
+.form-floating label {
+    color: #495057;
+    font-size: 14px;
+    padding: 10px 15px;
+}
+
+/* Submit button styling */
+.btn.btn-secondary {
+    background-color: #007bff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.btn.btn-secondary:hover {
+    background-color: #0056b3;
+}
+
+/* Input placeholder styling */
+.form-control::placeholder {
+    color: #6c757d;
+    opacity: 0.7;
+}
+
+/* Responsive design */
+@media (max-width: 576px) {
+    form {
+        padding: 20px;
+    }
+
+    .btn.btn-secondary {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
